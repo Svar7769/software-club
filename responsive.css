@@ -1,44 +1,19 @@
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  header h1 {
-    font-size: 24px;
-  }
-
-  header p {
-    font-size: 16px;
-  }
-
-  .logo {
-    height: 80px;
-    object-fit: contain;
-    padding-bottom: 5px;
-  }
-
-  .icon {
-    display: none;
-  }
-
-  #nav {
-    display: block;
-  }
-
-  .nav-item {
-    display: inline;
-    font-size: 1.1rem;
-    margin-right: 20px;
-    text-decoration: none;
-  }
-
-  .sticky {
-    position: fixed;
-    top: 0;
-  }
-}
+/* @media screen and (min-width: 601px) {
+ 
+} */
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 620px) {
   header h1 {
     font-size: 18px;
+    font-family: inherit;
+    margin-bottom: 5px;
+  }
+
+  header h2 {
+    font-size: 16px;
+    font-family: inherit;
   }
 
   header p {
@@ -57,10 +32,12 @@
     color: white;
     padding: 5px 10px;
     margin-top: 5px;
+    padding-right: 10%;
     display: block;
-    position: absolute;
-    right: 10%;
-    position: fixed;
+    text-align: right;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
 
   #nav {
@@ -69,6 +46,9 @@
     object-fit: contain;
     margin-top: 40px;
     position: fixed;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 25px;
   }
 
   nav ul {
@@ -83,10 +63,5 @@
     display: block;
     font-size: 16px;
     margin-top: 10px;
-  }
-
-  .sticky {
-    position: fixed;
-    top: 0;
   }
 }
