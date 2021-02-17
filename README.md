@@ -1,2 +1,2 @@
 # software-club
-Website of Software Club
+Software Club website
